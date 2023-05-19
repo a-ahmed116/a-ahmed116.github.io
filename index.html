@@ -10,7 +10,7 @@
 <body>
 
 <div id="pdf-contents">
-    <div id="pdf-meta" style="display: flex;margin: 10px;">
+    <!-- <div id="pdf-meta" style="display: flex;margin: 10px;">
         <div id="pdf-buttons" style="margin-right: 10px;">
             <button id="pdf-prev">Previous</button>
             <button id="pdf-next">Next</button>
@@ -18,13 +18,14 @@
         <div id="page-count-container" style="display: flex;">
             Page <div id="pdf-current-page" style="margin: 0 3px;"></div> of <div id="pdf-total-pages" style="margin: 0 3px;"></div>
         </div>
-    </div>
-    <canvas id="the-canvas" style="border: 1px solid; border-radius: 12px"></canvas>
-    <div id="page-loader">Loading page ...</div>
+    </div> -->
+    <!-- <canvas id="the-canvas" style="border: 1px solid; border-radius: 12px"></canvas> -->
+    <iframe src="./sample-protected.pdf" frameborder="0"></iframe>
+    <!-- <div id="page-loader">Loading page ...</div> -->
 </div>
 
 
-<script>
+<!-- <script>
     window.onload = function(){
         var pdfDoc, __CURRENT_PAGE = 1, __TOTAL_PAGES;
         // If absolute URL from the remote server is provided, configure the CORS
@@ -109,7 +110,7 @@
                 showPage(++__CURRENT_PAGE);
         });
     }
-</script>
+</script> -->
     
     <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.6.172/build/pdf.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
